@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MBW</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  	<%= render 'layouts/header' %>
+  </head>
+
+  <body class="background">
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
